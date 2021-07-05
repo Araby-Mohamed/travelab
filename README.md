@@ -1,4 +1,4 @@
-<p align="center"><img src="https://travelab.online/wp-content/uploads/2021/05/logoo-2222.png" width="150"></p>
+<p align="center"><img src="https://travelab.online/wp-content/uploads/2021/05/logoo-2222.png" width="100"></p>
 
 # Travelab
 Application of tourism packages and activities around the world
