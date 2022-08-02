@@ -148,4 +148,13 @@ class AuthController extends Controller
         // Return Success Message
         return $this->returnSuccess('The password has been changed successfully. Please go to the login page');
     }
+
+    public function remove_account(){
+        $user_id = \auth('api')->user()->id;
+        User::findOrFail($user_id)->delete();
+        auth('api')->logout();
+        session()->invalidate();
+        return $this->returnSuccess(null, __('Your account has been successfully deleted'));
+
+    }
 }

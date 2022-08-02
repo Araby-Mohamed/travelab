@@ -21,6 +21,7 @@ Route::group(['middleware' => ['api','CheckPassword'],'namespace' => 'Api'],func
     Route::post('forgot-password',$controller . 'forgotPassword');
     Route::post('update-password',$controller . 'updatePassword');
     Route::post('logout',$controller . 'logout')->middleware(['CheckUserToken:user-api']);
+    Route::post('delete_account',$controller . 'remove_account')->middleware(['CheckUserToken:user-api']);
     // Setting
     Route::group(['prefix' => 'setting'],function(){
         $controller = 'SettingController@';
